@@ -32,7 +32,6 @@ MyoMetrics is a five-person team investigating how **electromyography (EMG)** ca
 | `qms/` | QMS evidence: file register, versioning, traceability and changes |
 | `presentation/` | Slides and presentation resources |
 
-> Empty folders include a `.gitkeep` file so Git tracks them. The existing `files/Charter_Unsigned.pdf` is not included in this starter ZIP and will remain untouched.
 
 ## Results
 
