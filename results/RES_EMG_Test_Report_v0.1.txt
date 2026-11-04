@@ -1,0 +1,21 @@
+MyoMetrics — EMG Rest versus Fist classifier
+Training file: 1_raw_data_13-12_22.03.16.txt
+Testing file: 2_raw_data_13-13_22.03.16.txt
+UCI EMG channel: 1
+Window length: 200 ms
+Features: Root Mean Square (RMS), Mean Absolute Value (MAV)
+Training method: shallow decision tree (see Step 4 script)
+Testing windows: 30
+Correct predictions: 29
+Test accuracy: 96.7%
+Confusion matrix rows = actual Rest/Fist; columns = predicted Rest/Fist:
+  16  0
+  1  13
+Rest recall: 100.0%
+Fist recall: 92.9%
+
+LIMITATIONS
+Evaluation uses a separate recording of the SAME person.
+Only 200 ms labelled Rest/Fist windows are scored; label 0 is excluded.
+Neighbouring time windows may be correlated and the test set is small.
+No claim of accuracy on unseen participants or MyoWare hardware.

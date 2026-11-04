@@ -1,0 +1,20 @@
+MyoMetrics | MyoWare 2.0 ENV analysis
+Source file: DAQ_MyoWare_ENV_20261104_102303_v0.2.csv
+Nominal input: Arduino Nano ESP32 A0; 3.3V sensor supply
+Sampling frequency (observed): 100.00 Hz
+Duration: 35.00 s
+Samples: 3501
+Calibration rest median (1-4 s): 87.5 ADC
+Calibration fist median (6-9 s): 1342.9 ADC
+Activation threshold (midpoint): 715.2 ADC
+Detected events: 3
+Event 1: onset 5.88 s | offset 10.39 s | duration 4.51 s | peak 2243 ADC
+Event 2: onset 15.88 s | offset 20.13 s | duration 4.25 s | peak 1858 ADC
+Event 3: onset 25.79 s | offset 29.41 s | duration 3.62 s | peak 1469 ADC
+
+Method: ENV voltage sampled at ~100Hz, ADC counts, 200ms moving mean,
+person/recording-specific rest-versus-fist threshold, gap merge <=250ms,
+reject activation shorter than 400ms.
+Expected protocol: rest 0-5, fist 5-10, rest 10-15, fist 15-20,
+rest 20-25, fist 25-30, rest 30-35 seconds. Cue timing approximate.
+This is a proof-of-concept, not medical validation or a UCI classifier accuracy.
